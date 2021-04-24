@@ -22,6 +22,6 @@ Set up javascript dependencies
 
 Start server either for development or production
 
-### python3 app.py
+### `python3 app.py`
 
 Start flask server. This will load in tensorflow model and get you ready to start accepting requests. 
