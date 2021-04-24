@@ -9,7 +9,7 @@ export default class StyleTransfer extends React.Component {
     return (
       <Box display="flex" flexDirection="column" alignItems="center">
         <h1>Pigcassos</h1>
-        <ImgCompare progress={50}/>
+        <ImgCompare />
         <Link to="/">Go back to home</Link>
       </Box>
     );
