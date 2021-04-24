@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Pigcasso
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React Electron application that uses <a href=https://arxiv.org/abs/1508.06576>this paper</a>'s Convolutional Neural Network
+architecture to project style from Picasso's Weeping Woman onto an image of a pig. Tech stack: React Native, 
+Electron, Flask, Tensorflow 1.15.
+Code: <a href=https://github.com/sandeepmukh/pigcasso-electron>https://github.com/sandeepmukh/pigcasso-electron</a>
+Credit: <a href=https://www.tensorflow.org/tutorials/generative/style_transfer>Tensorflow tutorial</a>
 
-## Available Scripts
+Requires Python <= 3.7. GPU not required, but STRONGLY recommmended. 
 
-In the project directory, you can run:
+## Setup
 
-### `yarn start`
+### `pip3 install requirements.txt`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Set up python dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `yarn install`
 
-### `yarn test`
+Set up javascript dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn dev` or `yarn build`
 
-### `yarn build`
+Start server either for development or production
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### python3 app.py
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start flask server. This will load in tensorflow model and get you ready to start accepting requests. 
